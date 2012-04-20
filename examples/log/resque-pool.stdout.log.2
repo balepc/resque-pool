@@ -1,0 +1,53 @@
+resque-pool-manager[15490]: Reopened logfile: log/resque-pool.stdout.log
+resque-pool-manager[15490]: trying to reopen a log... File
+resque-pool-manager[15490]: orig_st: #<File::Stat dev=0x804, ino=3409002, mode=0100644, nlink=1, uid=1000, gid=1000, rdev=0x0, size=1063, blksize=4096, blocks=8, atime=Wed Feb 23 12:20:58 -0500 2011, mtime=Tue Mar 15 21:33:44 -0400 2011, ctime=Tue Mar 15 21:33:44 -0400 2011>
+resque-pool-manager[15490]: cur_stat: #<File::Stat dev=0x804, ino=3409002, mode=0100644, nlink=1, uid=1000, gid=1000, rdev=0x0, size=1063, blksize=4096, blocks=8, atime=Wed Feb 23 12:20:58 -0500 2011, mtime=Tue Mar 15 21:33:44 -0400 2011, ctime=Tue Mar 15 21:33:44 -0400 2011>
+resque-pool-manager[15490]: Reopen logs: close old children which have old logfiles open
+resque-pool-manager[15490]: Reopen logs: new children will inherit new logfiles
+resque-pool-manager[15490]: Reaped resque worker[16074] (status: 0) queues: bar
+resque-pool-manager[15490]: Reaped resque worker[16076] (status: 0) queues: foo
+resque-pool-worker[16638]: Starting worker arrakis:16638:bar
+resque-pool-worker[16640]: Starting worker arrakis:16640:foo
+resque-pool-manager[15490]: Reaped resque worker[16083] (status: 0) queues: bar
+resque-pool-manager[15490]: Reaped resque worker[16073] (status: 0) queues: foo,bar,baz
+resque-pool-worker[16650]: Starting worker arrakis:16650:bar
+resque-pool-worker[16652]: Starting worker arrakis:16652:foo,bar,baz
+resque-pool-manager[15490]: Reaped resque worker[16078] (status: 0) queues: foo,bar,baz
+resque-pool-worker[16659]: Starting worker arrakis:16659:foo,bar,baz
+resque-pool-manager[15490]: Reaped resque worker[16084] (status: 0) queues: foo,bar,baz
+resque-pool-manager[15490]: Reaped resque worker[16086] (status: 0) queues: foo,bar,baz
+resque-pool-worker[16669]: Starting worker arrakis:16669:foo,bar,baz
+resque-pool-worker[16664]: Starting worker arrakis:16664:foo,bar,baz
+resque-pool-manager[15490]: TERM: immediate shutdown (and immediate worker shutdown)
+resque-pool-manager[15490]: manager finished
+resque-pool-manager[24768]: Resque Pool running in development environment
+(in /home/nick/src/active/resque-pool/examples)
+resque-pool-manager[24768]: started manager
+resque-pool-manager[24768]: Pool contains worker PIDs: [24790, 24788, 24789, 24786, 24787, 24794, 24793]
+resque-pool-worker[24787]: Starting worker arrakis:24787:foo,bar,baz
+resque-pool-worker[24788]: Starting worker arrakis:24788:foo,bar,baz
+resque-pool-worker[24786]: Starting worker arrakis:24786:foo,bar,baz
+resque-pool-worker[24789]: Starting worker arrakis:24789:foo,bar,baz
+resque-pool-worker[24794]: Starting worker arrakis:24794:bar
+resque-pool-worker[24793]: Starting worker arrakis:24793:bar
+resque-pool-worker[24790]: Starting worker arrakis:24790:foo
+resque-pool-manager[24768]: HUP: reload config file and reload logfiles
+resque-pool-manager[24768]: Flushing logs
+resque-pool-manager[24768]: HUP: close old children which have old logfiles open
+resque-pool-manager[24768]: HUP: new children will inherit new logfiles
+resque-pool-manager[24768]: Reaped resque worker[24787] (status: 0) queues: foo,bar,baz
+resque-pool-manager[24768]: Reaped resque worker[24794] (status: 0) queues: bar
+resque-pool-manager[24768]: Reaped resque worker[24786] (status: 0) queues: foo,bar,baz
+resque-pool-worker[25311]: Starting worker arrakis:25311:foo,bar,baz
+resque-pool-worker[25312]: Starting worker arrakis:25312:bar
+resque-pool-worker[25315]: Starting worker arrakis:25315:foo,bar,baz
+resque-pool-manager[24768]: Reaped resque worker[24790] (status: 0) queues: foo
+resque-pool-manager[24768]: Reaped resque worker[24788] (status: 0) queues: foo,bar,baz
+resque-pool-manager[24768]: Reaped resque worker[24789] (status: 0) queues: foo,bar,baz
+resque-pool-manager[24768]: Reaped resque worker[24793] (status: 0) queues: bar
+resque-pool-worker[25326]: Starting worker arrakis:25326:foo
+resque-pool-worker[25327]: Starting worker arrakis:25327:foo,bar,baz
+resque-pool-worker[25328]: Starting worker arrakis:25328:foo,bar,baz
+resque-pool-worker[25330]: Starting worker arrakis:25330:bar
+resque-pool-manager[24768]: HUP: reload config file and reload logfiles
+resque-pool-manager[24768]: Flushing logs

@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8de50ef4-f700-4318-962f-12ca4fb751a7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/man/resque-pool.1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/man/resque-pool.1.ronn" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/man/resque-pool.yml.5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/man/resque-pool.yml.5.ronn" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/resque-pool" afterPath="$PROJECT_DIR$/bin/resque-pool" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Changelog.md" afterPath="$PROJECT_DIR$/Changelog.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/daemon_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/daemon_steps.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/resque-pool_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/resque-pool_steps.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/aruba_daemon_support.rb" afterPath="$PROJECT_DIR$/features/support/aruba_daemon_support.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/env.rb" afterPath="$PROJECT_DIR$/features/support/env.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/resque/pool.rb" afterPath="$PROJECT_DIR$/lib/resque/pool.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/resque/pool/cli.rb" afterPath="$PROJECT_DIR$/lib/resque/pool/cli.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/log/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/tmp/pids/.gitignore" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/resque/pool/pooled_worker.rb" afterPath="$PROJECT_DIR$/lib/resque/pool/pooled_worker.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/resque/pool/tasks.rb" afterPath="$PROJECT_DIR$/lib/resque/pool/tasks.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/resque/pool/version.rb" afterPath="$PROJECT_DIR$/lib/resque/pool/version.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resque-pool.gemspec" afterPath="$PROJECT_DIR$/resque-pool.gemspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/resque_pool_spec.rb" afterPath="$PROJECT_DIR$/spec/resque_pool_spec.rb" />
     </list>
     <ignored path="resque-pool.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,7 +31,7 @@
       <file leaf-file-name="pool.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/resque/pool.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="31" column="59" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -64,7 +49,7 @@
       <file leaf-file-name="pooled_worker.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/resque/pool/pooled_worker.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.8279221">
+            <state line="27" column="42" selection-start="544" selection-end="544" vertical-scroll-proportion="0.4383117">
               <folding />
             </state>
           </provider>
@@ -73,7 +58,7 @@
       <file leaf-file-name="tasks.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/resque/pool/tasks.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -88,6 +73,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/lib/resque/pool/pooled_worker.rb" />
+        <option value="$PROJECT_DIR$/lib/resque/pool.rb" />
       </list>
     </option>
   </component>
@@ -138,46 +124,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resque-pool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resque-pool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resque-pool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resque" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resque-pool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resque-pool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resque" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pool" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -287,13 +233,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/resque/pool.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/resque/pool/version.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -303,14 +242,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/resque/pool/tasks.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/resque/pool.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="59" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/resque/pool/pooled_worker.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.8279221">
+        <state line="27" column="42" selection-start="544" selection-end="544" vertical-scroll-proportion="0.4383117">
           <folding />
         </state>
       </provider>
