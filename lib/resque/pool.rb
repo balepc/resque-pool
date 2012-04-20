@@ -1,6 +1,5 @@
 # -*- encoding: utf-8 -*-
 require 'resque'
-require 'resque/worker'
 require 'resque/pool/version'
 require 'resque/pool/logging'
 require 'resque/pool/pooled_worker'
@@ -20,7 +19,7 @@ module Resque
 
     def initialize(config)
       init_config(config)
-      @workers = Hash.new { |workers, queues| workers[queues] = {} }
+      @workers = {}
       procline "(initialized)"
     end
 
@@ -238,20 +237,15 @@ module Resque
         loop do
           # -1, wait for any child process
           wpid, status = Process.waitpid2(-1, waitpid_flags)
-          break unless wpid
-
-          if worker = delete_worker(wpid)
-            log "Reaped resque worker[#{status.pid}] (status: #{status.exitstatus}) queues: #{worker.queues.join(",")}"
-          else
-            # this died before it could be killed, so it's not going to have any extra info
-            log "Tried to reap worker [#{status.pid}], but it had already died. (status: #{status.exitstatus})"
-          end
+          wpid or break
+          worker = delete_worker(wpid)
+          # TODO: close any file descriptors connected to worker, if any
+          log "Reaped resque worker[#{status.pid}] (status: #{status.exitstatus}) queues: #{worker.queues.join(",")}"
         end
       rescue Errno::ECHILD, QuitNowException
       end
     end
 
-    # TODO: close any file descriptors connected to worker, if any
     def delete_worker(pid)
       worker = nil
       workers.detect do |queues, pid_to_worker|
@@ -319,12 +313,13 @@ module Resque
         #self_pipe.each {|io| io.close }
         worker.work(ENV['INTERVAL'] || DEFAULT_WORKER_INTERVAL) # interval, will block
       end
+      workers[queues] ||= {}
       workers[queues][pid] = worker
     end
 
     def create_worker(queues)
       queues = queues.to_s.split(',')
-      worker = ::Resque::Worker.new(*queues)
+      worker = PooledWorker.new(*queues)
       worker.verbose = ENV['LOGGING'] || ENV['VERBOSE']
       worker.very_verbose = ENV['VVERBOSE']
       worker

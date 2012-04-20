@@ -25,9 +25,5 @@ end
 After do
   kill_all_processes!
   # now kill the daemon!
-  begin
-    Process.kill(9, @pid_from_pidfile) if @pid_from_pidfile
-  rescue Errno::ESRCH
-  end
-  #`pkill -9 resque-pool`
+  `pkill -9 -f resque-pool`
 end

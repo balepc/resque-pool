@@ -1,6 +1,5 @@
 require 'trollop'
 require 'resque/pool'
-require 'fileutils'
 
 module Resque
   class Pool
@@ -63,8 +62,6 @@ where [options] are:
           else
             File.delete pidfile
           end
-        else
-          FileUtils.mkdir_p File.dirname(pidfile)
         end
         File.open pidfile, "w" do |f|
           f.write pid
@@ -84,7 +81,7 @@ where [options] are:
         false
       rescue Errno::EPERM
         true
-      rescue ::Exception => e
+      rescue ::Exception
         $stderr.puts "While checking if PID #{old_pid} is running, unexpected #{e.class}: #{e}"
         true
       end
